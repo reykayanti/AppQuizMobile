@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/oren"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="@font/arbutus"
+                        android:text="MY QUIZ"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kerjakan 10 soal dibawah ini!!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <view
+                    android:id="@+id/view"
+                    class="androidx.viewpager2.widget.ViewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/bgg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal1"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgsatu"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal1">
+
+                    <RadioButton
+                        android:id="@+id/satua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sayap"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/satub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kaki"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/satuc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Insang"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal2"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal2"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgdua"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal2">
+
+                    <RadioButton
+                        android:id="@+id/duaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kelinci"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/duab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mawar"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/duac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Melati"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal3"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal3"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgtiga"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal3">
+
+                    <RadioButton
+                        android:id="@+id/tigaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Disayang"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/tigab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dibunuh"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/tugac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dimarahi"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal4"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal4"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgempat"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal4">
+
+                    <RadioButton
+                        android:id="@+id/empata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rajin"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/empatb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mencuri"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/empatc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bersih"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal5"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal5"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rglima"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal5">
+
+                    <RadioButton
+                        android:id="@+id/limaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pedas"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/limab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Asin"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/limac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pahit"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal6"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal6"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgenam"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal6">
+
+                    <RadioButton
+                        android:id="@+id/enama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sejuk"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/enamb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dingin"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/enamc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Panas"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal7"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal7"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgtujuh"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal7">
+
+                    <RadioButton
+                        android:id="@+id/tujuha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Iman"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/tujuhb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keburukan"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/tujuhc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kejahatan"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal8"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal8"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgdel"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal8">
+
+                    <RadioButton
+                        android:id="@+id/dela"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C#"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/delb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CSS"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/delc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Java"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal9"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal9"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgsem"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal9">
+
+                    <RadioButton
+                        android:id="@+id/sema"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/semb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/semc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak punya"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/soal10"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:text="@string/soal10"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rgsep"
+                    android:layout_width="294dp"
+                    android:layout_height="157dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soal10">
+
+                    <RadioButton
+                        android:id="@+id/sepa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mengetik"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/sepb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Memasak"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/sepc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menanam"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

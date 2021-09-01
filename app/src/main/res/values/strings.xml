@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyQuiz Eka</string>
+    <string name="soal1">1. Ayam tidak memiliki?</string>
+    <string name="soal2">2. Mana yang bukan bunga?</string>
+    <string name="soal3">3. Ibu harus .... </string>
+    <string name="soal4">4. Kita tidak boleh?</string>
+    <string name="soal5">5. Garam rasanya?</string>
+    <string name="soal6">6. Api itu?</string>
+    <string name="soal7">7. Kebersihan sebagian dari?</string>
+    <string name="soal8">8. Desain web menggunakan?</string>
+    <string name="soal9">9. Berapa jumlah kaki kucing?</string>
+    <string name="soal10">10. Keyboard berguna untuk?</string>
+</resources>
